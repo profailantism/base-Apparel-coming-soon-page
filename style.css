@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* primary */
+  --pink: hsl(0, 36%, 70%);
+  --red: hsl(0, 93%, 68%);
+
+  /* neutral */
+  --grey: hsl(0, 6%, 24%);
+}
+
+body,
+input {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
+}
+
+header {
+  margin: 2rem;
+}
+
+.logo > img {
+  width: 100px;
+}
+
+main {
+  text-align: center;
+}
+
+
+
+h1 {
+  margin: 3rem 2rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--grey);
+}
+
+h1 > span {
+  font-weight: 300;
+  color: var(--pink);
+}
+
+.announcements {
+  padding: 1rem;
+  color: var(--pink);
+  line-height: 1.5;
+}
+
+.email-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="email"] {
+  background-color: inherit;
+  border: 1px solid var(--pink);
+  border-radius: 25px;
+  padding: 1rem;
+  height: 50px;
+  width: 260px;
+}
+
+button {
+  border: none;
+  background: linear-gradient(
+    135deg,
+    hsl(0, 80%, 86%),
+    hsl(0, 74%, 74%)
+  );
+  padding: 1rem;
+  border-radius: 25px;
+  height: 50px;
+  margin-left: -40px;
+  width: 70px;
+}
+
+img {
+  max-width: 100%;
+}
